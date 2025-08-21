@@ -2,14 +2,17 @@ const botao = document.getElementById('gerador')
 botao.addEventListener('click', function gerador() {
     const numero = document.getElementById('numero').value
     const tabuada = document.getElementById('tabuada')
+    tabuada.innerHTML = '' 
 
-    for (var i = 0; i <= 10; i++) {
-        tabuada.innerHTML += `${numero} x ${i} = ${numero * i} <br>`
-    }
-
-    if (numero.length == 0) {
+    if (numero.length === 0) {
         alert('Por favor, digite um número!')
-        tabuada.innerHTML = ''
+    } else {
+
+        for (var i = 0; i <= 10; i++) {
+            var res = `${numero} x ${i} = ${numero * i} <br>`
+
+            tabuada.innerHTML += res
+        }
     }
 })
 

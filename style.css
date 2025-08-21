@@ -24,8 +24,8 @@ div.container {
     margin-top: 10px;
 }
 
-button {
-    padding: 10px 20px;
+.gerador {
+    padding: 10px;
     margin-right: 10px;
     border: none;
     background-color: #007BFF;
@@ -46,10 +46,13 @@ input {
 }
 
 .apagar {
-    margin-left: 10px;
+    padding: 10px;
+    border: none;
     background-color: red;
-    font-size: 15px;
-    padding: 10px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
 .apagar:hover {
@@ -57,8 +60,23 @@ input {
 }
 
 div.resultado {
+    background-color: rgb(216, 216, 216);
     text-align: center;
     margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabuada {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
